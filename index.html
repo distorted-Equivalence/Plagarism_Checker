@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Plagiarism Checker</title>
+   <style>
+      body {
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         background-image:  url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+
+      }
+      form{
+         position: absolute;
+         align-content: center;
+         left: 30%;
+         right: 30%;
+         top:20%;
+         
+
+      }
+      p,h3{
+         border: 30em;
+         color: beige;
+      }
+
+  
+
+      /* .right {
+         flex: 1;
+         background-color: black;
+         transition: 1s;
+         background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+      } */
+   </style>
+</head>
+
+<body>
+   <!-- <title>Plagiarism Checker</title> -->
+
+   <div class="container">
+      <div class="left">
+         <form action="http://localhost:5000" method="POST">
+            <p>Input Text : </p>
+            <p><textarea name="query" rows="8" cols="50" autofocus>{{query}}</textarea></p>
+            <br>
+            <p><input type="submit" name="submit" value="CHECK PLAGIARISM"></p>
+            <br>
+            <p>
+            <h3>{{output}}</h3>
+            </p>
+         </form>
+      </div>
+      <!-- <div class="right"></div> -->
+   </div>
+</body>
+
+</html>
